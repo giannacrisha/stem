@@ -1,21 +1,127 @@
+/* PLAYFAIR FONTS */
+
+@font-face {
+	font-family: playfairReg;
+	src: url(../fonts/Playfair/reg.ttf);
+}
+
+@font-face {
+	font-family: playfairItalic;
+	src: url(../fonts/Playfair/regi.ttf);
+}
+
+@font-face {
+	font-family: playfairSemiBold;
+	src: url(../fonts/Playfair/semibold.ttf);
+}
+
+@font-face {
+	font-family: playfairBoldItalic;
+	src: url(../fonts/Playfair/semiboldi.ttf);
+}
+
+@font-face {
+	font-family: playfairBold;
+	src: url(../fonts/Playfair/bold.ttf);
+}
+
+@font-face {
+	font-family: playfairBoldItalic;
+	src: url(../fonts/Playfair/boldi.ttf);
+}
+
+@font-face {
+	font-family: playfairExtraBold;
+	src: url(../fonts/Playfair/ebold.ttf);
+}
+
+@font-face {
+	font-family: playfairExtraBoldItalic;
+	src: url(../fonts/Playfair/eboldi.ttf);
+}
+
+@font-face {
+	font-family: playfairBlack;
+	src: url(../fonts/Playfair/black.ttf);
+}
+
+@font-face {
+	font-family: playfairBlackItalic;
+	src: url(../fonts/Playfair/blacki.ttf);
+}
+
+/* LATO FONTS */
+
+@font-face {
+	font-family: lagoThin;
+	src: url(../fonts/Lato/thin.ttf);
+}
+
+@font-face {
+	font-family: lagoThinItalic;
+	src: url(../fonts/Lato/thini.ttf);
+}
+
+@font-face {
+	font-family: lagoLight;
+	src: url(../fonts/Lato/light.ttf);
+}
+
+@font-face {
+	font-family: lagoLightItalic;
+	src: url(../fonts/Lato/lighti.ttf);
+}
+
+@font-face {
+	font-family: lagoReg;
+	src: url(../fonts/Lato/reg.ttf);
+}
+
+@font-face {
+	font-family: lagoRegItalic;
+	src: url(../fonts/Lato/regi.ttf);
+}
+
+@font-face {
+	font-family: lagoBold;
+	src: url(../fonts/Lato/bold.ttf);
+}
+
+@font-face {
+	font-family: lagoBoldItalic;
+	src: url(../fonts/Lato/boldi.ttf);
+}
+
+@font-face {
+	font-family: lagoBlack;
+	src: url(../fonts/Lato/black.ttf);
+}
+
+@font-face {
+	font-family: lagoThinItalic;
+	src: url(../fonts/Lato/blacki.ttf);
+}
+
 /* COLORS
 
-HEX: #e0e2e4 (LIGHT GRAY)
-
-HEX: #c6bcb6 (LIGHT BROWN)
-
-HEX: #96897f (MEDIUM BROWN)
-
-HEX: #625750 (DARK BROWN)
+#EEEFEA Light Gray
+#DBDFD9 Medium Light Gray
+#B6B9A3 Muted Green // 50 op #D0D1C2
+#A69E70 Mossy Green // 50 op #C4BFA1
+#766E3F Dark Mossy Green // 50 op #A59F80
 
 */
-
-/* FONTS */
 
 /* TEXT ELEMENTS */
 
 body {
 	margin: 0;
+	height: 100%;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	font-family: lagoReg;
+  	color: white;
+  	
 }
 
 a {
@@ -30,32 +136,28 @@ a {
 nav {
 	position: fixed;
 	float: right;
-	top:0;
-	right: 0;
-	background-color: #96897f;
+	background-color: #A59F80;
 	width: 100%;
-	height: 50px;
+	height: auto;
 	text-align: center;
-	justify-content: center;
-	align-items: center;
 	overflow: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+}
+
+nav h1 {
+	font-family: lagoBlack;
+	letter-spacing: 5px;
+	font-size: 3rem;
+	line-height: 1rem;
 }
 
 nav a {
 	color: white;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 1rem;
 	margin: auto;
 	line-height: 50px;
-	padding: 13px;
+	padding: 10px;
 	border-radius: 20px;
-	text-shadow:
-    -1px -1px 0 #9fa9a3,
-    1px -1px 0 #9fa9a3,
-    -1px 1px 0 #9fa9a3,
-    1px 1px 0 #9fa9a3;
 }
 
 nav a.active {
@@ -69,7 +171,7 @@ nav a.active {
 }
 
 nav a:hover{
-	background-color: #9fa9a3;
+	background-color: #C4BFA1;
 }
 
 nav input[type=text] {
