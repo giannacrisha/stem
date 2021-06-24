@@ -98,17 +98,49 @@
 }
 
 @font-face {
-	font-family: lagoThinItalic;
+	font-family: lagoBlackItalic;
 	src: url(../fonts/Lato/blacki.ttf);
+}
+
+/* HEEBO FONTS */
+
+@font-face {
+	font-family: heeboReg;
+	src: url(../fonts/Heebo/reg.ttf);
+}
+
+@font-face {
+	font-family: heeboMed;
+	src: url(../fonts/Heebo/med.ttf);
+}
+
+@font-face {
+	font-family: heeboSemiBold;
+	src: url(../fonts/Heebo/semibold.ttf);
+}
+
+@font-face {
+	font-family: heeboBold;
+	src: url(../fonts/Heebo/bold.ttf);
+}
+
+@font-face {
+	font-family: heeboExtraBold;
+	src: url(../fonts/Heebo/ebold.ttf);
+}
+
+@font-face {
+	font-family: heeboBlack;
+	src: url(../fonts/Heebo/black.ttf);
 }
 
 /* COLORS
 
 #EEEFEA Light Gray
 #DBDFD9 Medium Light Gray
-#B6B9A3 Muted Green // 50 op #D0D1C2
-#A69E70 Mossy Green // 50 op #C4BFA1
-#766E3F Dark Mossy Green // 50 op #A59F80
+Muted Green #D0D1C2
+Mossy Green #C4BFA1
+Dark Mossy Green #A59F80
 
 */
 
@@ -117,6 +149,7 @@
 body {
 	margin: 0;
 	height: 100%;
+	width: 100%;
   	background-repeat: no-repeat;
   	background-size: cover;
   	font-family: lagoReg;
@@ -133,58 +166,68 @@ a {
 
 /* NAVIGATION BAR */
 
-nav {
-	position: fixed;
+#navcontainer {
+	color: white;
+}
+
+#logo {
+	margin: 0.8rem 0 0 0.5rem;
+	width: 6rem;
+	padding: 0.7rem;
+	align-self: center;
+	background-color: #8C876F;
+	border-bottom-right-radius: 100%;
+	border-top-right-radius: 100%;
+}
+
+#logodiv {
 	float: right;
-	background-color: #A59F80;
-	width: 100%;
-	height: auto;
+	color: white;
 	text-align: center;
-	overflow: auto;
+	padding: 1rem 0rem 0rem 13rem;
+	transition: 0.5s;
+	position: absolute;
 }
 
-nav h1 {
-	font-family: lagoBlack;
-	letter-spacing: 5px;
+nav header {
+	text-align: center;
 	font-size: 3rem;
-	line-height: 1rem;
+	font-family: heeboBlack;
+	letter-spacing: 5px;
+	line-height: 3.5;
+	color: #F3F1E6;
 }
 
-nav a {
+#navbar {
+	display: flex;
+	flex-direction: column;
+	background-color: #8C876F ;
+	position: fixed;
+	width: 14rem;
+	height: 100%;
+	justify-content: flex-start;
+	transition: 0.5s;
+	text-align: left;
+	margin-left: -13rem;
+	line-height: 5;
+}
+
+#navbar:hover {
+	margin-left: 0;
+}
+
+.nav-link {
+	font-size: 1.1rem;
+	letter-spacing: 3px;
+	font-family: lagoBold;
 	color: white;
-	font-weight: bold;
-	font-size: 1rem;
-	margin: auto;
-	line-height: 50px;
-	padding: 10px;
-	border-radius: 20px;
+	transition: 0.5s;
+	padding-left: 1rem;
+	line-height: 4;
 }
 
-nav a.active {
-	background-color: #F3F1E4;
-	color: white;
-	text-shadow:
-    -1px -1px 0 #9fa9a3,
-    1px -1px 0 #9fa9a3,
-    -1px 1px 0 #9fa9a3,
-    1px 1px 0 #9fa9a3;  
-}
-
-nav a:hover{
-	background-color: #C4BFA1;
-}
-
-nav input[type=text] {
-	padding: 0.5em;
-	border: none;
-	margin-left: 2em;
-	font-size: 14px;
-	border-radius: 15px;
-	text-indent: 10px;
-	background-color: #F3F1E4;
-	color: gray;
-}
-
-nav select {
-	display: none;
+.nav-link:hover {
+	font-family: lagoBlack;
+	padding-left: 3rem;
+	background-color: #A8A285;
 }
